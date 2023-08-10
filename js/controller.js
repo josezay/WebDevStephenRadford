@@ -1,3 +1,4 @@
-function AppCtrl($scope){
-    
-}
+angular.module('myApp', [])
+    .controller('AppCtrl', function($scope) {
+        $scope.name = "José";
+    });
