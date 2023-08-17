@@ -45,12 +45,13 @@
                         </li>
                     </ul>
 
-                    <p ng-class="{'text-center': center, 'text-danger': error}">
+                    <p ng-class="{'text-center': center, 'text-danger': error}" ng-style="styleDemo()">
                         Lorem ipsum dolor sit amet
                     </p>
 
-                    <label><input type="checkbox" ng-model="center">text-center</label>
-                    <label><input type="checkbox" ng-model="error">text-danger</label>  
+                    <label><input type="checkbox" ng-model="center"> text-center</label>
+                    <label><input type="checkbox" ng-model="error"> text-danger</label>
+                    <label><input type="checkbox" ng-model="styler"> ng-style</label>  
                 </div>
                 <div class="col-sm-4">
                     teste

@@ -16,4 +16,15 @@ angular.module('myApp', [])
     $scope.clickHandler = function() {
         $scope.isHidden = !$scope.isHidden;
     };
+
+    $scope.styleDemo = function() {
+        if (!$scope.styler) {
+            return;
+        }
+
+        return {
+            background: 'red',
+            fontWeight: 'bold'
+        };
+    };
 });
