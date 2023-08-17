@@ -39,6 +39,20 @@
                     <div ng-if="!isHidden">
                         Click the button above to toggle.
                     </div>
+                    <ul>
+                        <li ng-repeat="contact in contacts">
+                            {{contact.name}}
+                        </li>
+                    </ul>
+
+                    <p ng-class="{'text-center': center, 'text-danger': error}">
+                        Lorem ipsum dolor sit amet
+                    </p>
+                    
+                    <label><input type="checkbox" ng-model="center"> text-
+                        center</label>
+                        <label><input type="checkbox" ng-model="error"> text-
+                        danger</label>  
                 </div>
                 <div class="col-sm-4">
                     teste
